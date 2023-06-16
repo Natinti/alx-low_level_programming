@@ -1,13 +1,12 @@
 #include <stdio.h>
 /**
- * Main - entry Point 
- * A program to print line of command for sizeof computer type 
+ * Main - entry Point
+ * A program to print line of command for sizeof computer type
  *
  * Return: 0 (Success)
  *
  */
-
-int main(void)
+int Main(void)
 {
 	char a;
 	int b;
