@@ -21,19 +21,18 @@ srand(time(0));
 n = rand() - RAND_MAX / 2;
 /* your code goes there */
 
-printf("The Last digit of %d  is", n);
 
 if ((n % 10) > 5)
 {
-	printf(n,n % 10, "and is greater than 5\n");
+	printf(" The Last Digit of %d is %d and is greater than 5\n", n, n % 10);
 }
 else if ((n % 10) == 0)
 {
-	printf(n,n % 10, "and is 0\n");
+	printf("The Last Digit of %d and is 0\n", n, n % 10);
 }
 else
 {
-	printf(n n % 10, "and is less than 6 and not 0\n");
+	printf("The Last Digit of %d  is %d and is less than 6 and not 0\n", n, n % 10);
 }
 
 return (0);
