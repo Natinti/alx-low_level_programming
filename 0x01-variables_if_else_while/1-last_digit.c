@@ -31,7 +31,7 @@ else if (lastDigit < 6 && lastDigit != 0)
 	printf("and is less than 6 and not 0\n");
 
 }
-else
+else if (lastDigit == 0)
 {
 	printf("and is 0\n");
 
