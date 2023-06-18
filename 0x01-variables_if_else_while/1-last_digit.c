@@ -14,11 +14,11 @@
 
 int main(void)
 {
-	int n;
-	int lastDigit = n % 10;
+	int n,lastDigit;
 
 srand(time(0));
 n = rand() - RAND_MAX / 2;
+lastDigit = n % 10;
 /* your code goes there */
 printf("The Last Digit of %d is %d ", n, lastDigit);
 
