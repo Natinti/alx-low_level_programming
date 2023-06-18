@@ -20,7 +20,7 @@ srand(time(0));
 n = rand() - RAND_MAX / 2;
 lastDigit = n % 10;
 /* your code goes there */
-printf("The Last Digit of %d is %d ", n, lastDigit);
+printf("Last Digit of %d is %d ", n, lastDigit);
 
 if (lastDigit > 5)
 {
