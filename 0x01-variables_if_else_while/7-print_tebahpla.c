@@ -13,7 +13,7 @@ int main(void)
 
 /*Print the alphabet in reverse using putchar*/
 
-for (alpha = 'z'; alpha <= 'a'; alpha++)
+for (alpha = 'z'; alpha <= 'a'; alpha--)
 {
 	putchar(alpha);
 
