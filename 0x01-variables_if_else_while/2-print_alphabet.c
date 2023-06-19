@@ -12,7 +12,7 @@ int main(void)
 	char alpha;
 
 	/*Printing lower alphabets in putchar*/
-	for (alpha ='a'; alpha <= 'z'; alpha++)
+	for (alpha = 'a'; alpha <= 'z'; alpha++)
 	{
 		putchar(alpha);
 	}
