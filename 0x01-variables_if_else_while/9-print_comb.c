@@ -16,7 +16,7 @@ int main(void)
 for (comb = 0; comb < 10; comb++)
 {
 	putchar('0' + comb);
-	if (comb < 10)
+	if (comb <= 9)
 	{
 		putchar(',');
 		putchar(' ');
