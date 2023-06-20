@@ -20,7 +20,7 @@ int main(void)
 
 	for (b = '0'; b <= '9'; b++)
 	{
-		if (!((a == b) || (a > b)))
+		if (!((a == b) || (b > a)))
 		{
 			putchar(a);
 			putchar(b);
