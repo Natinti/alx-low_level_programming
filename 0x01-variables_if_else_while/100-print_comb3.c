@@ -22,8 +22,8 @@ int main(void)
 	{
 		if (!((a == b) || (b > a)))
 		{
-			putchar(a);
 			putchar(b);
+			putchar(a);
 
 			if (!(a == '9' && b == '8'))
 			{
