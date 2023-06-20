@@ -17,20 +17,22 @@ int main(void)
 	for (a = '0'; a <= '9'; a++)
 	{
 	int b = '0';
+
 	for (b = '0'; b <= '9'; b++)
 	{
 		if (!((a == b) || (b > a)))
 		{
 			putchar(b);
 			putchar(a);
-			if(!(a == '9' && b == '8'))
+
+			if (!(a == '9' && b == '8'))
 			{
 				putchar(',');
 				putchar(' ');
 			}
 		}
 	}
-     }
-putchar('\n');
-return(0);
+	}
+	putchar('\n');
+	return (0);
 }
