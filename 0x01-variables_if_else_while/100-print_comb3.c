@@ -20,10 +20,10 @@ int main(void)
 
 	for (b = '0'; b <= '9'; b++)
 	{
-		if (!((a == b) || (b > a)))
+		if (!((a == b) || (a > b)))
 		{
-			putchar(b);
 			putchar(a);
+			putchar(b);
 
 			if (!(a == '9' && b == '8'))
 			{
