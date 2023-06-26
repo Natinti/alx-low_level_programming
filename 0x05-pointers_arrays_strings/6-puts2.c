@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * puts - function to print one character out of two
+ * puts2 - function to print one character out of two
  * Starting with the first one
  * @str : input
  * Return: print
  */
 
-void puts(char *str)
+void puts2(char *str)
 {
 	int longi = 0;
 	int t = 0;
