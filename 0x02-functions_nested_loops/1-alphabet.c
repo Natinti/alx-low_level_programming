@@ -16,3 +16,10 @@ void print_alphabet(void)
 	}
 	_putchar('\n');
 }
+/**
+ * or int i
+ * for (i = 97; i <= 122; i++(using the ascii code of the letters)
+ * {
+ *      _putchar(i);
+ *      }
+ *      _putchar('\n');
