@@ -8,9 +8,9 @@
 
 void print_alphabet(void)
 {
-	int alpha;
+	char alpha;
 
-	for (alpha = 97; alpha >= 122; alpha++)
+	for (alpha = 'a'; alpha <= 'z'; alpha++)
 	{
 		_putchar(alpha);
 	}
