@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * cap_string - This function capitalizes all owrds of a string
- * @str: The string that is to be capitalized
+ *cap_string - This function capitalizes all owrds of a string
+ *@str: The string that is to be capitalized
  *
- * Return: Pointer to the changed string
+ *Return: A pointer to the changed string
  */
 
-char *cap_string(char *)
+char *cap_string(char *str)
 {
 	int index = 0;
 
