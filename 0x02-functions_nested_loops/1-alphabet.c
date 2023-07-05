@@ -16,8 +16,8 @@ void print_alphabet(void)
 	}
 	_putchar('\n');
 }
-/**
- * or int i
+/*
+ * alphabet: using int i to work for the alphabet
  * for (i = 97; i <= 122; i++(using the ascii code of the letters)
  * {
  *      _putchar(i);
