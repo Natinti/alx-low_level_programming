@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * _memset - a function that fills memory with a constant byte
+ * *_memset - a function that fills memory with a constant byte
  * @s: memory area that must be filled
  * @b: char to copy
  * @n: number of times to copy b
