@@ -45,3 +45,20 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	return (ptr);
 }
+
+
+/*void *_calloc(unsigned int nmemb, unsigned int size)
+{
+	void *memory;
+	char *arr;
+	unsigned int index;
+	if (nmemb == 0 || size == 0)
+		return (NULL);
+	memory = malloc(nmemb * size);
+	if (memory == NULL)
+		return (NULL);
+	arr = memory;
+	for (index = 0; index < (size * nmemb); index++)
+		arr[index] = '\0';
+	return (arr);
+}*/
