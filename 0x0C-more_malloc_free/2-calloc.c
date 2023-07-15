@@ -47,7 +47,8 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 }
 
 
-/*void *_calloc(unsigned int nmemb, unsigned int size)
+/*
+ * *void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *memory;
 	char *arr;
@@ -61,4 +62,4 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	for (index = 0; index < (size * nmemb); index++)
 		arr[index] = '\0';
 	return (arr);
-}*/
+}**/
