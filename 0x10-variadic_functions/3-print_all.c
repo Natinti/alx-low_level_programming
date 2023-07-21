@@ -44,7 +44,7 @@ void print_all(const char * const format, ...)
 				printf("(nil)");
 			}
 		}
-		sep = ",";
+		sep = ", ";
 		format_index++; }
 	va_end(list);
 	printf("\n"); }
