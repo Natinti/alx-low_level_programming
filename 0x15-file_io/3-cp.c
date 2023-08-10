@@ -7,14 +7,15 @@
  * @argv: the argument passed
  * @buffer: what is to be read from size allocated
  */
+
 void error_98(int file0, char *buffer, char *argv)
 {
-        if (file0 < 0)
-        {
-                dprintf(STDERR_FILENO, "Error: can't read from file %s\n", argv);
-                free(buffer);
-                exit(98);
-        }
+	if (file0 < 0)
+	{
+		dprintf(STDERR_FILENO, "Error: can't read from file %s\n", argv);
+		free(buffer);
+		exit(98);
+	}
 }
 
 /**
@@ -23,15 +24,14 @@ void error_98(int file0, char *buffer, char *argv)
  * @argv: the argument passed
  * @buffer: what is to be read from size allocated
  */
-
 void error_99(int file0, char *buffer, char *argv)
 {
-        if (file0 < 0)
-        {
-                dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv);
-                free(buffer);
-                exit(99);
-        }
+	if (file0 < 0)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv);
+		free(buffer);
+		exit(99);
+	}
 }
 
 /**
@@ -42,12 +42,12 @@ void error_99(int file0, char *buffer, char *argv)
 
 void error_100(int file0, char *buffer)
 {
-        if (file0 < 0)
-        {
-                dprintf(STDERR_FILENO, "Error: Can't close to %i\n", file0);
-                free(buffer);
-                exit(100);
-        }
+	if (file0 < 0)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't close to %i\n", file0);
+		free(buffer);
+		exit(100);
+	}
 }
 
 /**
