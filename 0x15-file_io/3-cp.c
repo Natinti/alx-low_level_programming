@@ -44,7 +44,7 @@ void error_100(int file0, char *buffer)
 {
 	if (file0 < 0)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close to %i\n", file0);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", file0);
 		free(buffer);
 		exit(100);
 	}
