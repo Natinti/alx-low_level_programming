@@ -60,7 +60,7 @@ void error_100(int file0, char *buffer)
 
 int main(int argc, char **argv)
 {
-	int file0, file1, res0, res1; /* res0 - source file, res1- destination file */
+	int file0, file1, res0, res1;
 	char *buffer;
 
 	if (argc != 3)
@@ -91,7 +91,7 @@ int main(int argc, char **argv)
 	res0 = close(file0);
 	error_100(res0, buffer);
 	res0 = close(file1);
-	error_100(res0, buffer);
+	error_100(res1, buffer);
 	free(buffer);
 	return (0);
 }
