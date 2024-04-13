@@ -2,7 +2,7 @@
 #define _HASH_TABLES_H_
 
 #include <stdlib.h>
-#include <atring.h>
+#include <string.h>
 #include <stdio.h>
 
 /**
@@ -86,3 +86,5 @@ void shash_table_print_rev(const shash_table_t *ht);
 void shash_table_delete(shash_table_t *ht);
 shash_node_t *make_shash_node(const char *key, const char *value);
 void add_to_sorted_list(shash_table_t *table, shash_node_t *node);
+
+#endif /* _HASH_TABLES_H_ */
