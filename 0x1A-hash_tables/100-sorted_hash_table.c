@@ -121,6 +121,38 @@ void add_i_shash(shash_table_t *ht, shash_node_t *new)
 }
 
 /**
+ * shash_table_set - this adds a hash (key, value) to a given shash table
+ *
+ * @ht: this is a pointer to the shash table
+ * @key: this is the key of the shash
+ * @value: the value of the store
+ * Return: 1 if success, 0 if fails
+ */
+int shash_table_set(shash_table_t *ht, const char *key, const char *value)
+{
+	unsigned long int k_index;
+	shash_node_t *new;
+
+	if (ht == NULL)
+		return (0);
+
+	if (key == NULL || *key == '\0')
+		return (0);
+
+	k_index = key_index((unsigned char *)key, ht->size);
+
+	new = add_n_shash(&(ht->array[k_index]), key, value);
+
+	if (new == NULL)
+		return (0);
+
+	add_i_shash(ht, new);
+
+	return (1);
+}
+
+
+/**
  * shash_table_get - retrieves a value associated with a key
  *
  * @ht: pointer to the shash table
@@ -175,7 +207,7 @@ void shash_table_print(const shash_table_t *ht)
 	{
 		printf("%s'%s': '%s'", sep, tmp->key, tmp->value);
 		sep = ", ";
-		tmp = tmp->next;
+		tmp = tmp->snext;
 	}
 
 	printf("}\n");
@@ -207,6 +239,7 @@ void shash_table_print_rev(const shash_table_t *ht)
 		sep = ", ";
 		tmp = tmp->sprev;
 	}
+
 	printf("}\n");
 }
 
